@@ -1,0 +1,70 @@
+{
+  "bench": {
+    "youtubeId": "CayG6UYqL8g",
+    "source": "https://www.nasm.org/resource-center/exercise-library/barbell-bench-press"
+  },
+  "chest": {
+    "youtubeId": "lRo9zZ7EwpM",
+    "source": "https://www.nasm.org/resource-center/exercise-library/chest-press-machine"
+  },
+  "press": {
+    "youtubeId": "0JUrOH--Kdk",
+    "source": "https://www.nasm.org/resource-center/exercise-library/incline-push-up"
+  },
+  "core": {
+    "youtubeId": "bxn9FBrt4-A",
+    "source": "https://www.nasm.org/resource-center/exercise-library/dead-bug"
+  },
+  "bridge": {
+    "youtubeId": "Z3cY3d3BBo4",
+    "source": "https://www.nasm.org/resource-center/exercise-library/floor-bridge"
+  },
+  "legpress": {
+    "youtubeId": "cDGOn-yfKJA",
+    "source": "https://www.nasm.org/resource-center/exercise-library/leg-press"
+  },
+  "legcurl": {
+    "youtubeId": "_2Kd0d-JEUM",
+    "source": "https://www.nasm.org/resource-center/exercise-library/seated-leg-curl"
+  },
+  "facepull": {
+    "youtubeId": "eTCBSFlCJ_s",
+    "source": "https://www.nasm.org/resource-center/exercise-library/face-pull"
+  },
+  "cableFly": {
+    "youtubeId": "XY6JrX1wyxk",
+    "source": "https://www.nasm.org/resource-center/exercise-library/cable-crossover"
+  },
+  "pullup": {
+    "youtubeId": "9yVGh3XbJ34",
+    "source": "https://www.nasm.org/resource-center/exercise-library/pull-up"
+  },
+  "rdl": {
+    "youtubeId": "xgusDooVfKU",
+    "source": "https://www.nasm.org/resource-center/exercise-library/romanian-deadlift-barbell"
+  },
+  "goblet": {
+    "youtubeId": "nfX7IFK9UNI",
+    "source": "https://www.nasm.org/resource-center/exercise-library/goblet-squat"
+  },
+  "pushup": {
+    "youtubeId": "WDIpL0pjun0",
+    "source": "https://www.nasm.org/resource-center/exercise-library/push-up"
+  },
+  "lyingCurl": {
+    "youtubeId": "Dq5y4WEcqqo",
+    "source": "https://www.nasm.org/resource-center/exercise-library/lying-leg-curl"
+  },
+  "plank": {
+    "youtubeId": "mwlp75MS6Rg",
+    "source": "https://www.nasm.org/resource-center/exercise-library/plank"
+  },
+  "deadlift": {
+    "youtubeId": "Z6gcRfPNcZo",
+    "source": "https://www.nasm.org/resource-center/exercise-library/barbell-deadlift"
+  },
+  "barbellCurl": {
+    "youtubeId": "pQfJR-sSIvA",
+    "source": "https://www.nasm.org/resource-center/exercise-library/barbell-bicep-curl"
+  }
+}

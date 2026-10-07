@@ -1,0 +1,6 @@
+'use client';
+import {useState} from 'react';
+import videos from '@/lib/form-videos.json';
+import {exerciseList} from '@/lib/training';
+const byName=Object.fromEntries(Object.entries(videos).filter(([id])=>exerciseList[id]).map(([id,video])=>[exerciseList[id].name,video]));
+export function FormVideo({name}:{name:string}){const [open,setOpen]=useState(false),video=byName[name];if(!video)return <p className="footnote">A matching form video is still being curated. Use the photos and written cues; ask staff for a demonstration if unsure.</p>;return <div className="form-video"><button type="button" onClick={()=>setOpen(!open)}>{open?'Hide video':'▶ Watch form demonstration'}</button>{open&&<><iframe title={`${name} form demonstration by NASM`} src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?rel=0`} loading="lazy" allow="encrypted-media; picture-in-picture" allowFullScreen referrerPolicy="strict-origin-when-cross-origin"/><p className="footnote">NASM demonstration. The full clip may include introduction and explanation. Opening the player connects to YouTube. Start light; a video cannot check your form.</p><a href={`https://www.youtube.com/watch?v=${video.youtubeId}`} target="_blank" rel="noreferrer">Open on YouTube</a> · <a href={video.source} target="_blank" rel="noreferrer">Original exercise guide</a></>}</div>}

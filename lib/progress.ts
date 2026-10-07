@@ -1,0 +1,3 @@
+export type Wellness=Record<string,{done?:boolean,time?:string,enabled?:boolean}>;
+export function dateKey(d=new Date()){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
+export function streaks(data:Wellness,today:string){const dates=[...new Set(Object.entries(data).filter(([k,v])=>v.done&&/^(workout|movement)\//.test(k)).map(([k])=>k.split('/')[1]))].sort();let best=0,run=0,previous='';for(const date of dates){const d=new Date(`${date}T12:00:00`);d.setDate(d.getDate()-1);run=previous===dateKey(d)?run+1:1;best=Math.max(best,run);previous=date}const yesterday=new Date(`${today}T12:00:00`);yesterday.setDate(yesterday.getDate()-1);return {best,current:previous===today||previous===dateKey(yesterday)?run:0,dates}}
